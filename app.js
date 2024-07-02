@@ -21,7 +21,7 @@ const reviewRoutes = require('./routes/reviews');
 
 const MongoDBStore = require("connect-mongo")(session);
 
-const dbUrl ='mongodb+srv://madhavbansalmat21:test123@cluster0.cppnnr2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const dbUrl = process.env.DB_URL;
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
