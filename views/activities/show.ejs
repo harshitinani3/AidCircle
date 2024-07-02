@@ -30,7 +30,7 @@
             <ul class="list-group list-group-flush">
                 <li class="list-group-item text-muted"><%= activity.location%></li>
                 <li class="list-group-item">Submitted by <%= activity.author.username%></li>
-                <li class="list-group-item">$<%= activity.price%>/night</li>
+                <li class="list-group-item">Activity Budget: $<%= activity.price%></li>
             </ul>
             <%  if( currentUser && activity.author.equals(currentUser._id))  {%>
             <div class="card-body">
