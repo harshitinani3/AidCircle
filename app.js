@@ -37,7 +37,6 @@ db.once("open", () => {
 });
 
 
-//just to comment
 const app = express();
 
 app.engine('ejs', ejsMate)
